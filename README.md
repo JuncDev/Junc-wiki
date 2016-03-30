@@ -1,2 +1,1 @@
-# Junc-wiki
-Junc wiki pages
+_Junc_ wiki pages
