@@ -1,1 +1,1 @@
-_Junc_ wiki pages
+[_Junc_ wiki pages](../../wiki)
