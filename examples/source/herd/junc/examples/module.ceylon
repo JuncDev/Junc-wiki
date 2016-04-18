@@ -1,5 +1,6 @@
 "The module contains several _Junc_ examples:  
  * Echo service - [[package herd.junc.examples.echo]].  
+ * Echo service with messages - [[package herd.junc.examples.echomsg]].  
  * Union data type usage with _Junc_ service and sockets - [[package herd.junc.examples.unionecho]].  
  * Multiservicing - [[package herd.junc.examples.multiservicing]].  
  "
