@@ -71,11 +71,9 @@ class EchoMessageStation(Railway railway) satisfies Station {
 	}
 		
 	// listenes service added event and establish connection to
-	void onEchoServiceRegistered(JuncTrack track)(ServiceAddedEvent<Nothing, StringMessage> event) {
-		if (is ServiceAddress address = event.service.address) {
-			track.connect<Nothing, StringMessage, ServiceAddress>(address)
-					.onComplete(onEchoClient(track));            
-		}
+	void onEchoServiceRegistered(JuncTrack track)(ServiceAddedEvent<Nothing, StringMessage, ServiceAddress> event) {
+		track.connect<Nothing, StringMessage, ServiceAddress>(event.service.address)
+				.onComplete(onEchoClient(track));            
 	}
 	
 	// station start method
